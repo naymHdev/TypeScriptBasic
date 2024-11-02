@@ -17,17 +17,22 @@
 
   const girls: GenericArray<boolean> = [true, false, true, false, true, true];
 
-  const allFriends: GenericArray<{ name: string; age: number; role?: string }> =
-    [
-      {
-        name: "maliha",
-        age: 19,
-      },
-      {
-        name: "sanjida",
-        age: 23,
-      },
-    ];
+  interface Person {
+    name: string;
+    age: number;
+    role?: string;
+  }
+
+  const allFriends: GenericArray<Person> = [
+    {
+      name: "maliha",
+      age: 19,
+    },
+    {
+      name: "sanjida",
+      age: 23,
+    },
+  ];
 
   // Generic Tuple
 
